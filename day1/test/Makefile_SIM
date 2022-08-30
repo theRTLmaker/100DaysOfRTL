@@ -1,0 +1,7 @@
+TOPLEVEL_LANG = verilog
+SIM = icarus
+VERILOG_SOURCES = ../sim.sv ../$(DAY).sv
+TOPLEVEL = sim
+MODULE = $(DAY)_tb
+
+include $(shell cocotb-config --makefiles)/Makefile.sim
